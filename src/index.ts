@@ -15,7 +15,7 @@ app.use(cors());
 app.get("/health", async (req: Request, res: Response) => {
   res.send({ message: "health OK!" });
 });
-app.use("/api/my/user", myUserRoute);
+app.use("api/my/user", myUserRoute);
 
 app.listen(7000, () => {
   console.log("server started on localhost");
